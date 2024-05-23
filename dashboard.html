@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,0" />
+
+    <!-- Bank hoorondiin guilgeenii hesgiin component -->
+    <script type="module" src="components/bank-hoorond-comp.js"></script>
+
+    <!-- Huulganii component -->
+    <script type="module" src="components/huulga.comp.js"></script>
+
+</head>
+<body>
+
+    <main>
+
+        <!-- Dashboard left side -->
+        <div class="left">
+            
+            <!-- Logo -->
+            <img src="assets/menu-logo.png" alt="Logo">
+            
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <!-- Bank hoorondiin guilgee button -->
+                <button id="g-btn">
+                    Банк хоорондын гүйлгээ
+                    <span class="material-symbols-outlined">account_balance_wallet</span>
+                </button>
+
+                <!-- Guilgeenii medeelel button -->
+                <button id="h-btn">
+                    Гүйлгээний мэдээлэл
+                    <span class="material-symbols-outlined">account_balance</span>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Dashboard right side -->
+        <div class="right">
+
+            <!-- bank hoorondiin guilgeenii heseg -->
+            <bank-hoorond-comp id="b_ank"></bank-hoorond-comp>
+
+            <!-- huulganii heseg -->
+            <huulga-comp id="h_uulga"></huulga-comp>
+
+        
+        </div>
+
+        <script src="js/dashboard-switch.js"></script>
+
+    </main>
+
+</body>
+</html>

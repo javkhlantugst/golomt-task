@@ -1,0 +1,54 @@
+@import url(root.css);
+
+*{
+    font-family: var(--main-font);
+    margin: 0;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+signup-comp{
+    display: none;
+}
+
+log-comp{
+    display: block;
+}
+
+/* buttons sign up bolon login */
+.btns
+{
+    height: 4rem;
+    display: flex;
+    
+
+    & button{
+        height: 100%;
+        border: 2.5px solid var(--main-color);
+        width: 100%;
+        background-color: white;
+        color: var(--main-color);
+        font-size: 15px;
+        font-weight: bolder;
+        padding: 0;
+        justify-content: center;
+        border-radius: 0rem 0rem 1rem 1rem;
+        align-items: center;
+    }
+
+    #log-btn{
+        display: none;
+    }
+
+    button:hover{
+        color: var(--main-color);
+        background-color: var(--main-bg-color);
+    }
+}
+

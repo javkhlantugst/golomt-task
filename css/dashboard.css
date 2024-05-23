@@ -1,0 +1,74 @@
+@import url(root.css);
+*{
+    margin: 0;
+    font-family: var(--main-font);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100vh;
+}
+
+/* dashboard-nii zuun taliin css */
+.left{
+    background-color: var(--main-bg-color);
+    height: 100vh;
+
+    img{
+        background-color: white;
+        width: 100%;
+        border-radius: 0rem 1rem 1rem 0rem;
+        margin-top: 0.2rem;
+    }
+}
+
+/* zuun taliin 2 buttonii heseg */
+.buttons{
+
+    background-color: var(--main-color);
+    border-radius: 0rem 1rem 1rem 0rem;
+    height: 82vh;
+
+    button{
+        height: 2.8rem;
+        width: 100%;
+        display: flex;
+        border: none;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        background-color: var(--main-color);
+        font-size: 14.5px;
+        font-weight: bolder;
+        padding: 0rem 0rem 0rem 2rem;        
+    }
+
+    span{
+        margin-right: 1.7rem;
+    }
+
+    button:hover{
+        background-color: var(--main-bg-color);
+        color: var(--main-color);
+    }
+
+    #g-btn{
+        border-radius: 0rem 1rem 0rem 0rem;
+    }
+}
+
+
+/* dashboard-nii baruun tal bank hoorondiin heseg */
+.right{
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+huulga-comp{
+    display: none;
+}
+
+

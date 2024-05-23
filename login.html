@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log In</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Sign up component -->
+    <script type="module" src="components/signup-component.js"></script>
+
+    <!-- Log In component -->
+    <script type="module" src="components/login-component.js"></script>
+
 </head>
 <body>
+    <main>
+        <!-- Sign up form -->
+        <signup-comp id="sign"></signup-comp>
     
+        <!-- Login form -->
+        <login-comp id="log"></login-comp>
+    
+        <!-- Switch buttons -->
+        <div class="btns">
+            <button id="sign-btn">Sign Up</button>
+            <button id="log-btn">Log In</button>
+    
+            <script src="js/switch.js"></script>
+        </div>
+    </main>
 </body>
 </html>
