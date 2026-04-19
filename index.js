@@ -134,6 +134,11 @@ app.get("/huulga", async (req, res) => {
     }
 });
 
+app.get("/", (req, res) => {
+    res.redirect("/login.html");
+});
+
+app.use(express.static("public"));
 
 //portiin medeelliig console deer delgetslene
 app.listen(port, () => {
